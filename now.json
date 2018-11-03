@@ -1,6 +1,0 @@
-{
-  "name": "datanote-api-job-runner",
-  "env": {
-    "NODE_ENV": "production"
-  }
-}

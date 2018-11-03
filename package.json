@@ -3,16 +3,20 @@
   "version": "0.0.0",
   "description": "Datanote API Job Runner",
   "main": "lib/index.js",
+  "bin": {
+    "datanote-api-job-runner": "bin/datanote-api-job-runner"
+  },
   "scripts": {
-    "start": "micro",
-    "dev": "micro-dev",
-    "deploy": "now --docker"
+    "start": "datanote-api-job-runner"
+  },
+  "engines": {
+    "node": ">=8.11.0"
   },
   "author": "Julian Bilcke <julian.bilcke@datagica.com>",
   "license": "GPLv3",
   "dependencies": {
-    "@datagica/datanote-api-engine": "0.0.8",
-    "micro": "^9.3.3",
+    "@datagica/datanote-api-engine": "^0.0.9",
+    "commander": "^2.19.0",
     "rpc-websockets": "^4.3.3"
   },
   "devDependencies": {
