@@ -1,13 +1,13 @@
 {
   "name": "@datagica/datanote-api-job-runner",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Datanote API Job Runner",
   "main": "lib/index.js",
   "bin": {
     "datanote-api-job-runner": "bin/datanote-api-job-runner"
   },
   "scripts": {
-    "start": "datanote-api-job-runner"
+    "start": "node lib/cli.js"
   },
   "engines": {
     "node": ">=8.11.0"
